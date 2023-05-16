@@ -28,6 +28,9 @@ body{
     height: 100vh;
     width: -webkit-fill-available;
 }
+.pages div:nth-child(1){
+    flex-basis: 85%;
+}
 #page1 div:nth-child(1),#transring{
     background-color: blueviolet;
     flex-basis: 85%;
@@ -35,11 +38,50 @@ body{
 #page1 div:nth-child(2){
     background-color: rgb(175, 175, 175);
 }
-/* #page2 div:nth-child(1),#svg_progress{
+#page2 div:nth-child(1),#svg_progress{
     background-color: rgb(74, 74, 245);
 }
 #page2 div:nth-child(2){
     background-color: rgb(37, 37, 170);
     
-} */
+}
+#page3 div:nth-child(1),#svg_progress{
+    background-color: pink
+}
+#page3 div:nth-child(2){
+    background-color: plum;
+    
+}
+#page4 div:nth-child(1),#svg_progress{
+    background-color: rgb(74, 74, 245);
+}
+#page4 div:nth-child(2){
+    background-color: rgb(37, 37, 170);
+    
+}
+#page5 div:nth-child(1),#svg_progress{
+    background-color: pink;
+}
+#page5 div:nth-child(2){
+    background-color: plum;
+    
+}
+#page6 div:nth-child(1),#svg_progress{
+    background-color: rgb(74, 74, 245);
+}
+#page6 div:nth-child(2){
+    background-color: rgb(37, 37, 170);
+    
+}
+#page7 div:nth-child(1),#svg_progress{
+    background-color: blueviolet;
+}
+#page7 div:nth-child(2){
+    background-color: plum;
+    
+}
 
+
+/* #Opaque_Ring{
+    stroke-dasharray:100,1000;
+} */
