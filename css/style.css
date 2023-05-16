@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    position: relative;
+}
+
+/* svg progess on scrolling */
+#transring{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%,-50%);
+    border-radius: 30rem;
+    height: 45%;
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.pages div{
+    height: 100vh;
+    width: -webkit-fill-available;
+}
+#page1 div:nth-child(1),#transring{
+    background-color: blueviolet;
+    flex-basis: 85%;
+}
+#page1 div:nth-child(2){
+    background-color: rgb(175, 175, 175);
+}
+/* #page2 div:nth-child(1),#svg_progress{
+    background-color: rgb(74, 74, 245);
+}
+#page2 div:nth-child(2){
+    background-color: rgb(37, 37, 170);
+    
+} */
+
