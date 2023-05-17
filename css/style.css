@@ -4,6 +4,18 @@ body {
   overflow-x: hidden;
 }
 
+
+.contactus{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 1rem 1.2rem;
+  border-radius: 20rem;
+  background-color: #00aaef;
+  z-index: 1;
+}
+
+
 .content {
   position: relative;
 }
