@@ -219,6 +219,16 @@ scrollbar-thumb:hover {
   scale: 0.7;
 }
 
+/* page 7 design */
+#page7{
+  position: relative;
+}
+#page7>img{
+  position: absolute;
+  left: 0;  right: 0;  top: 0;
+  width: inherit;
+}
+
 
 .hide {
   visibility: hidden;
