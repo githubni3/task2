@@ -56,6 +56,13 @@ body {
   flex-direction: column;
   /* height: -webkit-fill-available; */
 }
+
+.pageContent{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  
+}
 .pageContent > *{
     margin-bottom: 2rem;
 }
@@ -108,7 +115,7 @@ body {
     scale: 0.7;
 }
 
-/* page 2 content design */
+/* page content design */
 #page2Content h5:nth-child(1),#page3Content h5:nth-child(1),#page5Content h5:nth-child(1),#page6Content h5:nth-child(1){
     text-align: left;
 }
@@ -119,6 +126,8 @@ body {
 #page2Content h1 ,#page3Content h1{
     text-align: left;
 }
+
+
 
 /* page 3 content design */
 #page3Content >img{
@@ -169,6 +178,7 @@ body {
   line-height: 0;
   user-select: 0;
   pointer-events: none;
+  opacity: 0;
 }
 
 /* right container design */
