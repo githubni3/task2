@@ -4,6 +4,42 @@ body {
   overflow-x: hidden;
 }
 
+/* scroll bar  */
+/* For Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: navy; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(109, 109, 252); 
+}
+
+/* For Firefox */
+scrollbar {
+  width: 10px; 
+}
+
+scrollbar-track {
+  background: transparent; /* Background color of the track */
+}
+
+scrollbar-thumb {
+  background: navy;
+}
+
+scrollbar-thumb:hover {
+  background: rgb(109, 109, 252);
+}
+
+
 
 .contactus{
   position: fixed;
@@ -43,7 +79,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 45%;
+  min-width: 45vw;
   height: 100vh;
   /* z-index: -1; */
 }
@@ -59,7 +95,7 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 44vw;
+  width: 45vw;
   z-index: 1;
   background-color: inherit;
   display: flex;
@@ -198,6 +234,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  width: 55vw;
 }
 
 .pages {
