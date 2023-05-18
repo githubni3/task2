@@ -4,6 +4,9 @@ body {
   overflow-x: hidden;
 }
 
+.mob_content{
+  display: none;
+}
 /* scroll bar  */
 /* For Webkit-based browsers */
 ::-webkit-scrollbar {
@@ -299,25 +302,25 @@ scrollbar-thumb:hover {
   /* width: 100%; */
 }
 
-#page1 {
+#page1,#mob_page1 {
   background-color: rgb(218 218 218);
 }
-#page2 {
+#page2 ,#mob_page2{
   background-color: rgb(13 13 98);
 }
-#page3 {
+#page3 ,#mob_page3{
   background-color: rgb(16 16 59 / 95%);
 }
-#page4 {
+#page4 ,#mob_page4{
   background-color: rgb(49, 158, 49);
 }
-#page5 {
+#page5 ,#mob_page5{
   background-color: rgb(80, 233, 233);
 }
-#page6 {
+#page6 ,#mob_page6{
   background-color: rgb(12 12 64);
 }
-#page7 {
+#page7 ,#mob_page7{
   background-color: rgb(184, 184, 184);
 }
 /* #Opaque_Ring{
@@ -352,3 +355,4 @@ scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
 }
+

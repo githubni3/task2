@@ -217,3 +217,21 @@ ScrollTrigger.create({
 
 
 
+// function handleWidthChange() {
+//   const currentWidth = window.innerWidth;
+//   if (currentWidth <= 1024) {
+//     document.getElementsByClassName('content')[0].classList.add('hide');
+//     document.getElementsByClassName('mob_content')[0].classList.remove('hide');
+//   }else{
+//     document.getElementsByClassName('content')[0].classList.remove('hide');
+//     document.getElementsByClassName('mob_content')[0].classList.add('hide');
+//   }
+// }
+
+
+
+// // Add event listener for width changes
+// window.addEventListener('resize', handleWidthChange);
+
+
+

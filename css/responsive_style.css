@@ -139,9 +139,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #transring,.pageContent>div:first-child{display: none;}
+    .content{display: none;}
+    .mob_content{
+      display: flex;
+    }
 
-    #pageContentContainer{display: none;}
+    
 
 }
 

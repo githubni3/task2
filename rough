@@ -1,0 +1,36 @@
+<div id="right_container" class="">
+        <div id="page1" class=" pages">
+          <!-- <img src="./assets/nexgtv-entertainment-mobile-app-development.png" alt="">
+          <img src="./assets/nexgtv-mobile-app-ui-design.png" alt=""> -->
+        </div>
+        <div id="page2" class=" pages">
+          <!-- <img src="./assets/veme-blockchain-app-developed.png" alt="">
+          <img src="./assets/veme-app-ui-design.png" alt=""> -->
+        </div>
+        <div id="page3" class=" pages">
+          <!-- <img src="./assets/nasa-fitness-tracking-mobile-app.png" alt="">
+          <img src="./assets/measure-total-body-weight-through-fitness-app.png" alt=""> -->
+        </div>
+        <div id="page4" class=" pages">
+          <!-- <img src="./assets/melltoo-img2.png" alt="">
+          <img src="./assets/melltoo-img1.png" alt=""> -->
+        </div>
+        <div id="page5" class=" pages">
+          <!-- <img src="./assets/karavan-social-networking-app-screen.png" alt="">
+          <img src="./assets/social-networking-app-case-study.png" alt="">
+          <img src="./assets/developers-for-social-media-app.png" alt="">
+          <img src="./assets/karavan_2.png" alt="">
+          <img src="./assets/karavan-social-networking-app-screen-2.png" alt=""> -->
+        </div>
+        <div id="page6" class=" pages">
+          <!-- <img src="./assets/pizza_box.png" alt="">
+          <img src="./assets/dominos-bread.png" alt="">
+          <img src="./assets/ux-strategy-for-mobile-app-devlopment.png" alt="">
+          <img src="./assets/domi-img1.png" alt="">
+          <img src="./assets/dominos-bread1.png" alt=""> -->
+        </div>
+        <div id="page7" class=" pages">
+          <!-- <img src="./assets/erp-app-development-service.png" alt=""> -->
+        </div>
+
+      </div>

@@ -11,8 +11,14 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
+  <!-- owl carousel css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive_style.css">
+  <link rel="stylesheet" href="./css/mob_style.css">
 </head>
 
 <body>
@@ -165,7 +171,7 @@
           </div>
           <div>
             <h1>ABC 345</h1>
-            <span>We are the best company</span>
+            <span>We are the best company</span>larr
             <span>in the world</span>
             <div>
               <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
@@ -277,7 +283,124 @@
     </div>
 
   </div>
+
+  <div class="mob_content">
+    <div id="mob_carousel" class="owl-carousel">
+      <div id="mob_page1" class=" mob_pages">
+        <div>
+          <img src="./assets/nexgtv-entertainment-mobile-app-development.png" alt="">
+          <img src="./assets/nexgtv-mobile-app-ui-design.png" alt="">
+        </div>
+        <div class="page1Color">
+          <img src="./assets/world-communication-awards-for-best-digital-experience.png" alt="image">
+          <h1>ABC 123</h1>
+          <p>This is sample text for ABC 123</p>
+          <div>
+            <a href="/">View Case Study &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div id="mob_page2" class=" mob_pages">
+        <div>
+          <img src="./assets/veme-blockchain-app-developed.png" alt="">
+          <img src="./assets/veme-app-ui-design.png" alt="">
+        </div>
+        <div class="page2Color">
+          <h1>ABC 2</h1>
+          <p>This is sample text for ABC 2</p>
+          <div>
+            <p>CASE STUDY - </p><a id="mob_page4Btn" class="mob_btn" href="/">Comming Soon</a>
+          </div>
+        </div>
+      </div>
+      <div id="mob_page3" class=" mob_pages">
+        <div>
+          <img src="./assets/nasa-fitness-tracking-mobile-app.png" alt="">
+          <img src="./assets/measure-total-body-weight-through-fitness-app.png" alt="">
+        </div>
+        <div class="page3Color">
+          <h1>ABC 3</h1>
+          <p>This is sample text for ABC 3</p>
+          <div>
+            <p>CASE STUDY - </p><a id="mob_page3Btn" class="mob_btn" href="/">Comming Soon</a>
+          </div>
+        </div>
+      </div>
+      <div id="mob_page4" class=" mob_pages">
+        <div>
+          <img src="./assets/melltoo-img2.png" alt="">
+          <img src="./assets/melltoo-img1.png" alt="">
+        </div>
+        <div class="page4Color">
+          <img src="./assets/mobile-app-of-the-year-by-entrepreneur.png" alt="image">
+          <h1>XYZ 123</h1>
+          <p>This is sample text for XYZ 123</p>
+          <div>
+            <p>CASE STUDY - </p><a id="mob_page4Btn" class="mob_btn" href="/">Comming Soon</a>
+          </div>
+        </div>
+      </div>
+      <div id="mob_page5" class=" mob_pages">
+        <div>
+          <img src="./assets/karavan-social-networking-app-screen.png" alt="">
+          <img src="./assets/social-networking-app-case-study.png" alt="">
+        </div>
+        <div class="page5Color">
+          <h1>ABC 5</h1>
+          <p>This is sample text for ABC 5</p>
+          <div>
+            <a href="/">View Case Study &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div id="mob_page6" class=" mob_pages">
+        <div>
+          <img src="./assets/ux-strategy-for-mobile-app-devlopment.png" alt="">
+          <img src="./assets/domi-img1.png" alt="">
+        </div>
+        <div class="page6Color">
+          <h1>ABC 6</h1>
+          <p>This is sample text for ABC 6</p>
+          <div>
+            <a href="/">View Case Study &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div id="mob_page7" class=" mob_pages">
+        <div>
+          <img src="./assets/erp-app-development-service.png" alt="">
+
+        </div>
+        <div class="page7Color">
+          <h1>ABC 5</h1>
+          <p>This is sample text for ABC 5</p>
+          <div>
+            <a href="/">View Case Study &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="./js/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        dots: true, // Enable dots (pagination)
+        // autoplay: true, // Enable autoplay
+        // autoplayTimeout: 5000, // Set autoplay interval in milliseconds (e.g., 5000ms = 5 seconds)
+        // autoplayHoverPause: true
+      });
+    });
+  </script>
+
 </body>
 
 </html>

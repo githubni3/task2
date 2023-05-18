@@ -1,0 +1,118 @@
+/* owl carousel dots */
+.owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .owl-dot span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .owl-dot.active span {
+    background-color: #555;
+  }
+
+
+  /* content design */
+  #mob_carousel{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+  .mob_pages{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .mob_pages>div:nth-child(2){
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 32vh;
+    color: white;
+    padding-left: 1rem;
+    padding-top: 3rem;
+  }
+  .mob_pages>div:nth-child(2) a{
+    color: white;text-decoration: none;
+  }
+  .mob_pages>div:nth-child(2)>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .mob_pages>div:first-child{
+    height: 65vh;
+  }
+
+/* page 4 design */
+#mob_page1>div:nth-child(1),
+#mob_page2>div:nth-child(1),
+#mob_page3>div:nth-child(1),
+#mob_page4>div:nth-child(1),
+#mob_page5>div:nth-child(1),
+#mob_page6>div:nth-child(1),
+#mob_page7>div:nth-child(1){
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mob_page1>div:nth-child(1)>img:first-child,
+#mob_page2>div:nth-child(1)>img:first-child,
+#mob_page5>div:nth-child(1)>img:first-child,
+#mob_page6>div:nth-child(1)>img:first-child,
+#mob_page4>div:nth-child(1)>img:first-child,
+#mob_page3>div:nth-child(1)>img:first-child {
+    scale: 0.4;
+    margin-right: -10rem;
+}
+#mob_page1>div:nth-child(1)>img:nth-child(2),
+#mob_page2>div:nth-child(1)>img:nth-child(2),
+#mob_page4>div:nth-child(1)>img:nth-child(2),
+#mob_page3>div:nth-child(1)>img:nth-child(2),
+#mob_page5>div:nth-child(1)>img:nth-child(2),
+#mob_page6>div:nth-child(1)>img:nth-child(2) {
+    scale: 0.4;
+    margin-left: -10rem;
+    transform: translateY(-2rem);
+}
+
+/* image on the top */
+#mob_page4>div:nth-child(2)>img,#mob_page1>div:nth-child(2)>img {
+    scale: 0.4;
+    position: absolute;
+    top: -38%;
+    left: -28%;
+}
+
+  .mob_btn{
+    padding: .5rem 2rem;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  #mob_page4Btn{
+    color: #0f760b;
+  }
+  #mob_page3Btn,
+  #mob_page2Btn{
+    background-color: white;
+    color: navy;
+  }
+
+  
