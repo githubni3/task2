@@ -142,38 +142,6 @@
     #transring,.pageContent>div:first-child{display: none;}
 
     #pageContentContainer{display: none;}
-    /* .container{ */
-        /* flex-direction: column; */
-        /* position: relative;
-    }
-
-    body{
-        height: 100vh;
-    }
-    #left_container {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        min-width: 100vw;
-        height: 30vh;
-    } */
-    #right_container {
-        width: 100%;
-        flex-direction: row;
-    }
-    .pages {
-        height: 70vh;
-    }
-    #left_container {
-        position: fixed;
-        /* top: 0; */
-        left: 0;
-        min-width: 100vw;
-        height: 35vh;
-        /* z-index: -1; */
-        bottom: 0 !important;
-        display: none;
-    }
 
 }
 

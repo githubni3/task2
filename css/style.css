@@ -273,7 +273,7 @@ scrollbar-thumb:hover {
 #page7>img{
   position: absolute;
   left: 0;  right: 0;  top: 10%;
-  width: inherit;
+  width: -webkit-fill-available;
 }
 
 
@@ -296,7 +296,7 @@ scrollbar-thumb:hover {
 
 .pages {
   height: 105.5vh;
-  width: 100%;
+  /* width: 100%; */
 }
 
 #page1 {
