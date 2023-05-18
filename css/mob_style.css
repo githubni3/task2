@@ -1,7 +1,7 @@
 /* owl carousel dots */
 .owl-dots {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -32,7 +32,12 @@
     width: 100vw;
     height: 100vh;
   }
-
+  .mob_pages>div:nth-child(2) h1{
+    font-size: 2.5rem;
+  }
+  .mob_pages>div:nth-child(2) p{
+    font-size: 1.5rem;
+  }
   .mob_pages>div:nth-child(2){
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;

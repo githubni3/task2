@@ -33,6 +33,12 @@
     top: -7%;
     left: -22%;
   }
+  .mob_pages>div:nth-child(2) h1{
+    font-size: 1.5rem;
+  }
+  .mob_pages>div:nth-child(2) p{
+    font-size: 1.2rem;
+  }
   #mob_page1 > div:nth-child(2) > img {
     scale: 0.55;
     top: -3%;
