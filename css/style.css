@@ -204,7 +204,51 @@ scrollbar-thumb:hover {
 }
 
 /* page 5 design */
-#page5,#page6{
+#page5{
+  position: relative;z-index: -1;
+}
+#page5>img{
+  scale: 0.8;
+}
+#page5>img:nth-child(1){
+  position: absolute;top: -4%;left: 20%;
+}
+#page5>img:nth-child(2){
+  position: absolute;top: 0;right: 25%;
+}
+#page5>img:nth-child(3){
+  position: absolute;top: 25%;right: 0%;
+}
+#page5>img:nth-child(4){
+  position: absolute;bottom: 0;left: 20%;
+}
+#page5>img:nth-child(5){
+  position: absolute;bottom: 0;right: 25%;
+}
+
+/* page 6 design */
+#page6{
+  position: relative;z-index: -1;
+}
+#page6>img{
+  scale: 0.8;
+}
+#page6>img:nth-child(1){
+  position: absolute;top: -4%;left: -4%;
+}
+#page6>img:nth-child(2){
+  position: absolute;top: -4%;right: -4%;
+}
+#page6>img:nth-child(3){
+  position: absolute;top: 20%;right: 25%;
+}
+#page6>img:nth-child(4){
+  position: absolute;bottom: -8%;left: 10%;
+}
+#page6>img:nth-child(5){
+  position: absolute;bottom: -8%;right: -4%;
+}
+/* #page5,#page6{
   flex-wrap: wrap;
 }
 #page5>img{
@@ -212,12 +256,12 @@ scrollbar-thumb:hover {
 }
 #page5>img:nth-child(4){
   align-self: flex-start;
-}
+} */
 
 /* page 6 design */
-#page6>img{
+/* #page6>img{
   scale: 0.7;
-}
+} */
 
 /* page 7 design */
 #page7{
@@ -244,12 +288,12 @@ scrollbar-thumb:hover {
   height: auto;
   display: flex;
   flex-direction: column;
-  width: 55vw;
+  width: 55%;
 }
 
 .pages {
   height: 105.5vh;
-  width: 55vw;
+  width: 100%;
 }
 
 #page1 {

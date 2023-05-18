@@ -169,12 +169,12 @@ ScrollTrigger.create({
 // ******************************
 // page5 animations
 
-const page5_timeline = gsap.timeline();
-page5_timeline.fromTo("#page5>img:nth-child(1)", {opacity:0, y: "10px" }, { opacity: 1, y:"-20px", duration:0.2})
-.fromTo("#page5>img:nth-child(2)", {opacity:0, y: "10px" }, { opacity: 1, y:"-20px" , duration:0.3})
-.fromTo("#page5>img:nth-child(3)", {opacity:0, x:"-100px" ,y: "100px" }, { opacity: 1,x:"20px", y:"180px" , duration:0.4})
-.fromTo("#page5>img:nth-child(4)", {opacity:0, x:"-200px" ,y:"80px"}, { opacity: 1,x:"-200px",y:"-110px" , duration:0.5})
-.fromTo("#page5>img:nth-child(5)", {opacity:0, x:"-200px" ,y:"80px"}, { opacity: 1,x:"-200px",y:"-110px" , duration:0.6});
+const page5_timeline = gsap.timeline({duration:0.2 });
+page5_timeline.from("#page5>img:nth-child(1)", {opacity:0, left:"18%"})
+.from("#page5>img:nth-child(2)", {opacity:0, top:"-2%"})
+.from("#page5>img:nth-child(3)", {opacity:0, right:"-2%" })
+.from("#page5>img:nth-child(4)", {opacity:0, bottom:"-10%"})
+.from("#page5>img:nth-child(5)", {opacity:0, bottom:"-10%"});
 
 ScrollTrigger.create({
   trigger: "#page5",
@@ -192,15 +192,15 @@ ScrollTrigger.create({
 
 
 
-// ******************************
-// page6 animations
+// // ******************************
+// // page6 animations
 
 const page6_timeline = gsap.timeline();
-page6_timeline.fromTo("#page6>img:nth-child(1)", {opacity:0, x:"-215px", y:"-60px", duration:1 }, { opacity: 1,x:"-195px", y:"-40px" ,duration:0.2})
-.fromTo("#page6>img:nth-child(2)", {opacity:0, x:"-100px" ,y: "100px"}, { opacity: 1,x:"-80px", y:"60px" ,duration:0.2})
-.fromTo("#page6>img:nth-child(3)", {opacity:0,  x:"185px", y:"-100px",duration:1}, { opacity: 1, x:"0px", y:"-80px" ,duration:0.2})
-.fromTo("#page6>img:nth-child(4)", {opacity:0, x:"-200px" ,y:"80px"}, { opacity: 1,x:"-190px",y:"-160px" ,duration:0.2})
-.fromTo("#page6>img:nth-child(5)", {opacity:0, x:"80px" ,y:"100px"}, { opacity: 1,x:"40px",y:"60px" ,duration:0.2});
+page6_timeline.from("#page6>img:nth-child(1)", {opacity:0, left: "-2%", duration:0.2 })
+.from("#page6>img:nth-child(2)", {opacity:0,right: "-2%"})
+.from("#page6>img:nth-child(3)", {opacity:0,  top: "18%"})
+.from("#page6>img:nth-child(4)", {opacity:0,bottom: "-10%"})
+.from("#page6>img:nth-child(5)", {opacity:0,bottom: "-10%", right: "-2%"});
 
 ScrollTrigger.create({
   trigger: "#page6",

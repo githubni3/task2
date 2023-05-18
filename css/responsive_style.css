@@ -1,33 +1,76 @@
 @media screen and (max-width: 1722px) {
-    /* #transring {
-        transform: translate(-120%, -90%);
-        height: 30%;
-    } */
-    #page1>img:nth-child(1),#page2>img:nth-child(1),#page3>img:nth-child(1){
-        margin-right: -5rem;
-    }
-    .pages>img{
-        scale: 0.8 !important;
-    }
+  
+  #page1 > img:nth-child(1),
+  #page2 > img:nth-child(1),
+  #page3 > img:nth-child(1) {
+    margin-right: -5rem;
+  }
+  #page5 > img,#page6 > img {
+    scale: 0.8 !important;
+  }
+  #page6 > img:nth-child(4) {
+    left: 4% !important;
+  }
+  #page5 > img:nth-child(1) {
+    left: 10% !important;
+  }
+  #page5 > img:nth-child(4) {
+    bottom: -8% !important;
+    left: 14%;
+  }
+  #page5 > img:nth-child(5) {
+    bottom: -12% !important;
+  }
 }
 @media screen and (max-width: 1577px) {
-    #page5>img:first-child{
-        margin-left: -2rem;
-    }
-    #page6>img:first-child{
-        /* transform: translate(-195px, -32px) scale(1, 1); */
-    }
+  .pages > img {
+    scale: 0.7 !important;
+  }
+  #page6 > img:nth-child(4) {
+    left: -6.9995% !important;
+  }
 }
 @media screen and (max-width: 1440px) {
-    /* #transring {
-        transform: translate(-120%, -90%);
-        height: 30%;
-    } */
-    .pages>img{
-        scale: 0.7 !important;
-    }
+  #page1 > img:nth-child(2) {
+    margin-left: -17%;
+  }
+  #page2 {
+    justify-content: flex-start;
+  }
+  #page3 > img:nth-child(2) {
+    margin-left: -12%;
+  }
+  #page4{
+    justify-content: space-around;
+  }
+  #page5 > img:nth-child(1) {
+    left: 1% !important;
+}
+#page5 > img:nth-child(2) {
+    top: -4%;
+}
+#page5 > img:nth-child(3) {
+    right: -6% !important;
+}
+#page5 > img:nth-child(4) {
+    left: 3%;
+}
+#page5 > img:nth-child(5) {
+    bottom: -8% !important;
+}
+#page6>img:nth-child(3) {
+    right: 17%;
+}
+#page6>img:nth-child(1) {
+    left: -7.9973%;
+}
 }
 @media screen and (max-width: 1200px) {
+
+      /* #transring {
+        transform: translate(-100%, -90%);
+        height: 30%;
+    } */
 }
 
 @media screen and (max-width: 838px) {
@@ -35,8 +78,6 @@
 
 @media screen and (max-width: 676px) {
 }
-
-
 
 @media screen and (max-width: 582px) {
 }
