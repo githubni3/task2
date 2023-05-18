@@ -269,7 +269,7 @@ scrollbar-thumb:hover {
 }
 #page7>img{
   position: absolute;
-  left: 0;  right: 0;  top: 0;
+  left: 0;  right: 0;  top: 10%;
   width: inherit;
 }
 

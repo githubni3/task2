@@ -1,4 +1,5 @@
 @media screen and (max-width: 1722px) {
+    /* page images in animation */
   
   #page1 > img:nth-child(1),
   #page2 > img:nth-child(1),
@@ -23,6 +24,7 @@
   }
 }
 @media screen and (max-width: 1577px) {
+    /* page images in animation */
   .pages > img {
     scale: 0.7 !important;
   }
@@ -31,6 +33,7 @@
   }
 }
 @media screen and (max-width: 1440px) {
+    /* page images in animation */
   #page1 > img:nth-child(2) {
     margin-left: -17%;
   }
@@ -67,13 +70,60 @@
 }
 @media screen and (max-width: 1200px) {
 
-      /* #transring {
-        transform: translate(-100%, -90%);
-        height: 30%;
-    } */
+    /* page images in animation */
+    #page1 > img:nth-child(1) {
+        margin-right: -11rem;
+    }
+    #page1 > img:nth-child(2) {
+        margin-left: -8%;
+    }
+    #page2>img:nth-child(2){
+        margin-left: -20%;
+    }
+    #page3 > img:nth-child(2) {
+        margin-left: -25%;
+        margin-right: -10%;
+    }
+    #page4>img:nth-child(1){
+        margin-right: -14%;
+    }
+    #page5 > img, #page6 > img {
+        scale: 0.6!important;
+    }
+    #page5>img:nth-child(2) {
+        right: 19%;
+    }
+    #page5 > img:nth-child(3) {
+        right: -9% !important;
+    }
+    #page5>img:nth-child(5) {
+        right: 18%;
+    }
+    #page6>img:nth-child(3) {
+        right: 8%;
+        top: 16%;
+    }
+
+    #page7>img{
+        left: 0;  right: 0;  top: 20%;
+      }
+
+
+    /* page content */
+    #page1Content h1, #page2Content h1, #page3Content h1, #page4Content h1, #page5Content h1, #page6Content h1, #page7Content h1 {
+        font-size: 3rem;
+    }
+    #page1Content h5, #page2Content h5, #page3Content h5, #page4Content h5, #page5Content h5, #page6Content h5, #page7Content h5 {
+        font-size: 1.5rem;
+    }
+    #page3Content >img {
+        scale: 0.85;
+    }
+
+
 }
 
-@media screen and (max-width: 838px) {
+@media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 676px) {
