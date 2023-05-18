@@ -184,6 +184,9 @@ scrollbar-thumb:hover {
 #page4Content>div:first-child{
   margin-top: -20%;
 }
+#page6Content>div:first-child{
+  margin-top: -40%;
+}
 #page5Content>div:first-child{
   margin-top: -30%;
 }

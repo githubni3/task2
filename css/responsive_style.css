@@ -113,7 +113,7 @@
 
 
     /* page content */
-    #page1Content>div:first-child,#page2Content>div:first-child,#page6Content>div:first-child{
+    #page1Content>div:first-child,#page2Content>div:first-child{
         margin-top: 50%;
       }
       #page3Content>div:first-child{
@@ -121,6 +121,9 @@
       }
       #page5Content>div:first-child{
         margin-top: -40%;
+      }
+      #page6Content>div:first-child{
+        margin-top: -50%;
       }
     #page1Content h1, #page2Content h1, #page3Content h1, #page4Content h1, #page5Content h1, #page6Content h1, #page7Content h1 {
         font-size: 3rem;
