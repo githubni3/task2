@@ -42,7 +42,7 @@
     height: 32vh;
     color: white;
     padding-left: 1rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
   .mob_pages>div:nth-child(2) a{
     color: white;text-decoration: none;
@@ -91,11 +91,14 @@
 }
 
 /* image on the top */
-#mob_page4>div:nth-child(2)>img,#mob_page1>div:nth-child(2)>img {
-    scale: 0.4;
+#mob_page4>div:nth-child(2)>img, #mob_page1>div:nth-child(2)>img {
+    scale: 0.25;
     position: absolute;
-    top: -38%;
-    left: -28%;
+    top: -41%;
+    left: -36%;
+}
+#mob_page4>div:nth-child(2)>img{
+    top: -50%;
 }
 
   .mob_btn{
