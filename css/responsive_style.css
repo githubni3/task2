@@ -69,6 +69,9 @@
 }
 }
 @media screen and (max-width: 1200px) {
+    #transring {
+        height: 35%;
+    }
 
     /* page images in animation */
     #page1 > img:nth-child(1) {
@@ -110,6 +113,15 @@
 
 
     /* page content */
+    #page1Content>div:first-child,#page2Content>div:first-child,#page6Content>div:first-child{
+        margin-top: 50%;
+      }
+      #page3Content>div:first-child{
+        margin-top: 35%;
+      }
+      #page5Content>div:first-child{
+        margin-top: -40%;
+      }
     #page1Content h1, #page2Content h1, #page3Content h1, #page4Content h1, #page5Content h1, #page6Content h1, #page7Content h1 {
         font-size: 3rem;
     }
@@ -124,6 +136,42 @@
 }
 
 @media screen and (max-width: 1024px) {
+    #transring,.pageContent>div:first-child{display: none;}
+
+    #pageContentContainer{display: none;}
+    /* .container{ */
+        /* flex-direction: column; */
+        /* position: relative;
+    }
+
+    body{
+        height: 100vh;
+    }
+    #left_container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        min-width: 100vw;
+        height: 30vh;
+    } */
+    #right_container {
+        width: 100%;
+        flex-direction: row;
+    }
+    .pages {
+        height: 70vh;
+    }
+    #left_container {
+        position: fixed;
+        /* top: 0; */
+        left: 0;
+        min-width: 100vw;
+        height: 35vh;
+        /* z-index: -1; */
+        bottom: 0 !important;
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 676px) {

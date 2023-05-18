@@ -2,118 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task2</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task2</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive_style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive_style.css">
 </head>
 
 <body>
-    <div class="content">
+  <div class="content">
 
-        <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 414 414"
-                style="enable-background:new 0 0 414 414; " xml:space="preserve">
+    <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" viewBox="0 0 414 414" style="enable-background:new 0 0 414 414; " xml:space="preserve">
 
-                <path id="Transparent_Ring" class="transrg"
-                    style="opacity:0.4;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:2;enable-background:new"
-                    d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+      <path id="Transparent_Ring" class="transrg"
+        style="opacity:0.4;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:2;enable-background:new" d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
                 c-47.8,0-91-19.4-122.3-50.7"></path>
 
-                <path id="Opaque_Ring" class="transrgwht" 
-                    style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10; stroke-dasharray: 10, 1000;"
-                    d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+      <path id="Opaque_Ring" class="transrgwht"
+        style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10; stroke-dasharray: 10, 1000;"
+        d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
                 c-47.8,0-91-19.4-122.3-50.7"></path>
 
-                <g id="Dots1" class="dots-nav">
-                    <g>
-                        <path class="dotsst dotsfill1" style="fill: rgb(0, 146, 255); opacity: 1;"
-                            d="M84,80 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"></path>
-                    </g>
-                    <g>
-                        <path class="dotsstro1"
-                            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                            d="M84,80c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"></path>
-                    </g>
-                </g>
-                <g id="Dots2" class="dots-nav">
-                    <g>
-                        <path class="dotsst dotsfill2" style="fill: rgb(0, 146, 255); opacity: 1;"
-                            d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"></path>
-                    </g>
-                    <g>
-                        <path class="dotsstro2"
-                            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                            d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"></path>
-                    </g>
-                </g>
-                <g id="Dots3" class="dots-nav">
-                    <g>
-                        <path class="dotsst dotsfill3" style="fill: rgb(0, 146, 255); opacity: 1;"
-                            d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"></path>
-                    </g>
-                    <g>
-                        <path class="dotsstro3"
-                            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                            d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"></path>
-                    </g>
-                </g>
-                <g id="Dots4" class="dots-nav">
-                    <g>
-                        <path class="dotsst dotsfill4" style="fill: rgb(0, 146, 255); opacity: 1;"
-                            d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"></path>
-                    </g>
-                    <g>
-                        <path class="dotsstro4"
-                            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                            d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"></path>
-                    </g>
-                </g>
-                <g id="Dots5" class="dots-nav">
-                    <g>
-                        <path class="dotsst dotsfill5" style="fill: rgb(0, 146, 255); opacity: 1;"
-                            d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"></path>
-                    </g>
-                    <g>
-                        <path class="dotsstro5"
-                            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                            d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"></path>
-                    </g>
-                </g>
-                <g id="Dots6" class="dots-nav">
-                    <g>
-                        <path class="dotsst dotsfill6" style="fill: rgb(0, 146, 255); opacity: 1;"
-                            d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"></path>
-                    </g>
-                    <g>
-                        <path class="dotsstro6"
-                            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                            d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"></path>
-                    </g>
-                </g>
-                <g id="Dots7" class="dots-nav">
-                    <g>
-                        <path class="dotsst dotsfill7" style="fill: rgb(0, 146, 255); opacity: 1;"
-                            d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"></path>
-                    </g>
-                    <g>
-                        <path class="dotsstro7"
-                            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
-                            d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"></path>
-                    </g>
-                </g>
-            </svg>
-        
-        <div class="container">
-            <div class="contactus">
-                <svg data-v-1dc5c933="" focusable="false" aria-hidden="true" viewBox="0 0 28 32" width="22.4" height="25.6"><path data-v-1dc5c933="" fill="white" d="M28,32 C28,32 23.2863266,30.1450667 19.4727818,28.6592 L3.43749107,28.6592 C1.53921989,28.6592
+      <g id="Dots1" class="dots-nav">
+        <g>
+          <path class="dotsst dotsfill1" style="fill: rgb(0, 146, 255); opacity: 1;"
+            d="M84,80 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"></path>
+        </g>
+        <g>
+          <path class="dotsstro1"
+            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
+            d="M84,80c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"></path>
+        </g>
+      </g>
+      <g id="Dots2" class="dots-nav">
+        <g>
+          <path class="dotsst dotsfill2" style="fill: rgb(0, 146, 255); opacity: 1;"
+            d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"></path>
+        </g>
+        <g>
+          <path class="dotsstro2"
+            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
+            d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"></path>
+        </g>
+      </g>
+      <g id="Dots3" class="dots-nav">
+        <g>
+          <path class="dotsst dotsfill3" style="fill: rgb(0, 146, 255); opacity: 1;"
+            d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"></path>
+        </g>
+        <g>
+          <path class="dotsstro3"
+            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
+            d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"></path>
+        </g>
+      </g>
+      <g id="Dots4" class="dots-nav">
+        <g>
+          <path class="dotsst dotsfill4" style="fill: rgb(0, 146, 255); opacity: 1;"
+            d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"></path>
+        </g>
+        <g>
+          <path class="dotsstro4"
+            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
+            d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"></path>
+        </g>
+      </g>
+      <g id="Dots5" class="dots-nav">
+        <g>
+          <path class="dotsst dotsfill5" style="fill: rgb(0, 146, 255); opacity: 1;"
+            d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"></path>
+        </g>
+        <g>
+          <path class="dotsstro5"
+            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
+            d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"></path>
+        </g>
+      </g>
+      <g id="Dots6" class="dots-nav">
+        <g>
+          <path class="dotsst dotsfill6" style="fill: rgb(0, 146, 255); opacity: 1;"
+            d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"></path>
+        </g>
+        <g>
+          <path class="dotsstro6"
+            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
+            d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"></path>
+        </g>
+      </g>
+      <g id="Dots7" class="dots-nav">
+        <g>
+          <path class="dotsst dotsfill7" style="fill: rgb(0, 146, 255); opacity: 1;"
+            d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"></path>
+        </g>
+        <g>
+          <path class="dotsstro7"
+            style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;"
+            d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"></path>
+        </g>
+      </g>
+    </svg>
+
+    <div class="container">
+      <div class="contactus">
+        <svg data-v-1dc5c933="" focusable="false" aria-hidden="true" viewBox="0 0 28 32" width="22.4" height="25.6">
+          <path data-v-1dc5c933="" fill="white"
+            d="M28,32 C28,32 23.2863266,30.1450667 19.4727818,28.6592 L3.43749107,28.6592 C1.53921989,28.6592
                     0,27.0272 0,25.0144 L0,3.6448 C0,1.632 1.53921989,0 3.43749107,0 L24.5615088,0 C26.45978,0
                     27.9989999,1.632 27.9989999,3.6448 L27.9989999,22.0490667 L28,22.0490667 L28,32 Z M23.8614088,20.0181333
                     C23.5309223,19.6105242 22.9540812,19.5633836 22.5692242,19.9125333 C22.5392199,19.9392 19.5537934,22.5941333
@@ -121,148 +121,163 @@
                     4.46760991,19.6105095 4.13759108,20.0170667 C3.97913051,20.2124916 3.9004494,20.4673395 3.91904357,20.7249415
                     C3.93763774,20.9825435 4.05196575,21.2215447 4.23660523,21.3888 C4.37862552,21.5168 7.77411059,24.5386667
                     13.9989999,24.5386667 C20.2248893,24.5386667 23.6203743,21.5168 23.7623946,21.3888 C23.9467342,21.2215726
-                    24.0608642,20.9827905 24.0794539,20.7254507 C24.0980436,20.4681109 24.0195551,20.2135019 23.8614088,20.0181333 Z"></path></svg>
+                    24.0608642,20.9827905 24.0794539,20.7254507 C24.0980436,20.4681109 24.0195551,20.2135019 23.8614088,20.0181333 Z"></path>
+        </svg>
+      </div>
+      <div id="left_container">
+      </div>
+      <div id="pageContentContainer">
+        <div id="page1Content" class="pageContent">
+          <div>
+            <h1>25M+ Downloads</h1>
+            <h5>on appstore & google playstore</h5>
+          </div>
+          <div>
+            <h1>ABC 678</h1>
+            <span>Best since 2017</span>
+            <span>We offer wide range of</span>
+            <span>web development and app development.</span>
+            <div>
+              <a href="">View Case Study &rarr;</a> <span>SKIP</span>
             </div>
-            <div id="left_container">
-            </div>
-            <div  id="pageContentContainer">
-                <div id="page1Content" class="pageContent">
-                    <h1>25M+ Downloads</h1>
-                    <h5>on appstore & google playstore</h5>
-                    <div>
-                        <h1>ABC 678</h1>
-                        <span>Best since 2017</span>
-                        <span>We offer wide range of</span>
-                        <span>web development and app development.</span>
-                        <div>
-                        <a href="">View Case Study &rarr;</a> <span>SKIP</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="page2Content" class="pageContent hide">
-                    <h5>The Next Big</h5>
-                    <h1>Blockchain</h1>
-                    <h5>Revolution</h5>
-                    <div>
-                        <h1>ABC 234</h1>
-                        <span>We are the best web development</span>
-                        <span>company in the world</span>
-                        <div>
-                        <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="page3Content" class="pageContent hide">
-                    <h5>Powered by advance</h5>
-                    <img src="./assets/nasa-mobile-app.png" alt="">
-                    <h5>algorithms</h5>
-                    <div>
-                        <h1>ABC 345</h1>
-                        <span>We are the best company</span>
-                        <span>in the world</span>
-                        <div>
-                        <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="page4Content" class="pageContent hide">
-                    <h5>Biggest Classifieds</h5>
-                    <h1>East Asia</h1>
-                    <h5>Countries</h5>
-                    <div>
-                        <img src="./assets/mobile-app-of-the-year-by-entrepreneur.png" alt="">
-                        <h1>ABC 23478</h1>
-                        <span>We are the best</span>
-                        <span>Web development company</span>
-                        <span>in the world</span>
-                        <div>
-                        <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="page5Content" class="pageContent hide">
-                    <h5>Text Headline</h5>
-                    <h1>Text Headline</h1>
-                    <h5>Footer headline</h5>
-                    <div>
-                        <h1>ABC 567</h1>
-                        <span>We are the best AR</span>
-                        <span>Development company</span>
-                        <span>in the world</span>
-                        <div>
-                        <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="page6Content" class="pageContent hide">
-                    <h5>Redefining</h5>
-                    <h1>UX Strategy</h1>
-                    <h5>and UI design</h5>
-                    <div>
-                        <h1>ABC 456</h1>
-                        <span>We are the best </span>
-                        <span>Development company</span>
-                        <span>in the world</span>
-                        <div>
-                        <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="page7Content" class="pageContent hide">
-                    <h5>Developing ERP Solution for</h5>
-                    <h1>Text Headline</h1>
-                    <h5>in furniture industry</h5>
-                    <div>
-                        <h1>ABC 678</h1>
-                        <span>Best since 2017 </span>
-                        <span>We offer wide range of</span>
-                        <span>web development and app development</span>
-                        <div>
-                        <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="right_container">
-                <div id="page1" class="pages">
-                    <img src="./assets/nexgtv-entertainment-mobile-app-development.png" alt="">
-                    <img src="./assets/nexgtv-mobile-app-ui-design.png" alt="">
-                </div>
-                <div id="page2" class="pages">
-                    <img src="./assets/veme-blockchain-app-developed.png" alt="">
-                    <img src="./assets/veme-app-ui-design.png" alt="">
-                </div>
-                <div id="page3" class="pages">
-                    <img src="./assets/nasa-fitness-tracking-mobile-app.png" alt="">
-                    <img src="./assets/measure-total-body-weight-through-fitness-app.png" alt="">
-                </div>
-                <div id="page4" class="pages">
-                    <img src="./assets/melltoo-img2.png" alt="">
-                    <img src="./assets/melltoo-img1.png" alt="">
-                </div>
-                <div id="page5" class="pages">
-                    <img src="./assets/karavan-social-networking-app-screen.png" alt="">
-                    <img src="./assets/social-networking-app-case-study.png" alt="">
-                    <img src="./assets/developers-for-social-media-app.png" alt="">
-                    <img src="./assets/karavan_2.png" alt="">
-                    <img src="./assets/karavan-social-networking-app-screen-2.png" alt="">
-                </div>
-                <div id="page6" class="pages">
-                    <img src="./assets/pizza_box.png" alt="">
-                    <img src="./assets/dominos-bread.png" alt="">
-                    <img src="./assets/ux-strategy-for-mobile-app-devlopment.png" alt="">
-                    <img src="./assets/domi-img1.png" alt="">
-                    <img src="./assets/dominos-bread1.png" alt="">
-                </div>
-                <div id="page7" class="pages">
-                    <img src="./assets/erp-app-development-service.png" alt="">
-                </div>
-
-            </div>
+          </div>
         </div>
-        
+        <div id="page2Content" class="pageContent hide">
+          <div>
+            <h5>The Next Big</h5>
+            <h1>Blockchain</h1>
+            <h5>Revolution</h5>
+          </div>
+          <div>
+            <h1>ABC 234</h1>
+            <span>We are the best web development</span>
+            <span>company in the world</span>
+            <div>
+              <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
+            </div>
+          </div>
+        </div>
+        <div id="page3Content" class="pageContent hide">
+          <div>
+            <h5>Powered by advance</h5>
+            <img src="./assets/nasa-mobile-app.png" alt="">
+            <h5>algorithms</h5>
+          </div>
+          <div>
+            <h1>ABC 345</h1>
+            <span>We are the best company</span>
+            <span>in the world</span>
+            <div>
+              <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
+            </div>
+          </div>
+        </div>
+        <div id="page4Content" class="pageContent hide">
+          <div>
+            <h5>Biggest Classifieds</h5>
+            <h1>East Asia</h1>
+            <h5>Countries</h5>
+          </div>
+          <div>
+            <img src="./assets/mobile-app-of-the-year-by-entrepreneur.png" alt="">
+            <h1>ABC 23478</h1>
+            <span>We are the best</span>
+            <span>Web development company</span>
+            <span>in the world</span>
+            <div>
+              <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
+            </div>
+          </div>
+        </div>
+        <div id="page5Content" class="pageContent hide">
+          <div>
+            <h5>Text Headline</h5>
+            <h1>Text Headline</h1>
+            <h5>Footer headline</h5>
+          </div>
+          <div>
+            <h1>ABC 567</h1>
+            <span>We are the best AR</span>
+            <span>Development company</span>
+            <span>in the world</span>
+            <div>
+              <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
+            </div>
+          </div>
+        </div>
+        <div id="page6Content" class="pageContent hide">
+          <div>
+            <h5>Redefining</h5>
+            <h1>UX Strategy</h1>
+            <h5>and UI design</h5>
+          </div>
+          <div>
+            <h1>ABC 456</h1>
+            <span>We are the best </span>
+            <span>Development company</span>
+            <span>in the world</span>
+            <div>
+              <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
+            </div>
+          </div>
+        </div>
+        <div id="page7Content" class="pageContent hide">
+          <div>
+            <h5>Developing ERP Solution for</h5>
+            <h1>Text Headline</h1>
+            <h5>in furniture industry</h5>
+          </div>
+          <div>
+            <h1>ABC 678</h1>
+            <span>Best since 2017 </span>
+            <span>We offer wide range of</span>
+            <span>web development and app development</span>
+            <div>
+              <a href="" style="filter: opacity(0.5);">Comming Soon</a> <span>SKIP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right_container">
+        <div id="page1" class="pages">
+          <img src="./assets/nexgtv-entertainment-mobile-app-development.png" alt="">
+          <img src="./assets/nexgtv-mobile-app-ui-design.png" alt="">
+        </div>
+        <div id="page2" class="pages">
+          <img src="./assets/veme-blockchain-app-developed.png" alt="">
+          <img src="./assets/veme-app-ui-design.png" alt="">
+        </div>
+        <div id="page3" class="pages">
+          <img src="./assets/nasa-fitness-tracking-mobile-app.png" alt="">
+          <img src="./assets/measure-total-body-weight-through-fitness-app.png" alt="">
+        </div>
+        <div id="page4" class="pages">
+          <img src="./assets/melltoo-img2.png" alt="">
+          <img src="./assets/melltoo-img1.png" alt="">
+        </div>
+        <div id="page5" class="pages">
+          <img src="./assets/karavan-social-networking-app-screen.png" alt="">
+          <img src="./assets/social-networking-app-case-study.png" alt="">
+          <img src="./assets/developers-for-social-media-app.png" alt="">
+          <img src="./assets/karavan_2.png" alt="">
+          <img src="./assets/karavan-social-networking-app-screen-2.png" alt="">
+        </div>
+        <div id="page6" class="pages">
+          <img src="./assets/pizza_box.png" alt="">
+          <img src="./assets/dominos-bread.png" alt="">
+          <img src="./assets/ux-strategy-for-mobile-app-devlopment.png" alt="">
+          <img src="./assets/domi-img1.png" alt="">
+          <img src="./assets/dominos-bread1.png" alt="">
+        </div>
+        <div id="page7" class="pages">
+          <img src="./assets/erp-app-development-service.png" alt="">
+        </div>
+
+      </div>
     </div>
-    <script src="./js/script.js"></script>
+
+  </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -175,7 +175,21 @@ scrollbar-thumb:hover {
     text-align: left;
 }
 
-
+#page1Content>div:first-child,#page3Content>div:first-child{
+  margin-top: 33%;
+}
+#page2Content>div:first-child{
+  margin-top: 40%;
+}
+#page4Content>div:first-child{
+  margin-top: -20%;
+}
+#page5Content>div:first-child{
+  margin-top: -30%;
+}
+#page7Content>div:first-child{
+  margin-top: -40%;
+}
 
 /* page 3 content design */
 #page3Content >img{
@@ -248,20 +262,6 @@ scrollbar-thumb:hover {
 #page6>img:nth-child(5){
   position: absolute;bottom: -8%;right: -4%;
 }
-/* #page5,#page6{
-  flex-wrap: wrap;
-}
-#page5>img{
-  scale: 0.8;
-}
-#page5>img:nth-child(4){
-  align-self: flex-start;
-} */
-
-/* page 6 design */
-/* #page6>img{
-  scale: 0.7;
-} */
 
 /* page 7 design */
 #page7{
