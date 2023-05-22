@@ -395,11 +395,27 @@
         loop: true,
         margin: 10,
         dots: true, // Enable dots (pagination)
-        autoplay: true, // Enable autoplay
-        autoplayTimeout: 5000, // Set autoplay interval in milliseconds (e.g., 5000ms = 5 seconds)
-        autoplayHoverPause: true
+        // autoplay: true, // Enable autoplay
+        // autoplayTimeout: 5000, // Set autoplay interval in milliseconds (e.g., 5000ms = 5 seconds)
+        // autoplayHoverPause: true,
+        onInitialized: animateFirstImage,
+        onTranslated: animateInImage
       });
     });
+    function animateFirstImage() {
+      gsap.from('.owl-item.active .mob_pages>div:nth-child(1) img', {
+        
+        y: 100
+      });
+}
+
+
+function animateInImage(event) {
+  gsap.from('.mob_pages>div:nth-child(1) img', {
+        
+          y: 100
+        });
+}
   </script>
 
 </body>

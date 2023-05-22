@@ -73,14 +73,14 @@ page1_timeline.from("#page1>img:nth-child(1)", {
 })
 .from("#page1>img:nth-child(2)", {
   y: "10px",
-  opacity: 0,
+  opacity: 0.1,
 });
 
 ScrollTrigger.create({
   trigger: "#page1",
     toggleActions: "restart none resume none",
-    start:"70% 60%",
-    end:"70% 30%",
+    start:"10% 90%",
+    end:"90% 10%",
     onEnter:()=>{
       page1_timeline.play();
     },
@@ -106,8 +106,8 @@ page2_timeline.to("#page2>img:nth-child(1)", {
 ScrollTrigger.create({
   trigger: "#page2",
     toggleActions: "restart none resume none",
-    start:"70% 80%",
-    end:"30% 30%",
+    start:"10% 90%",
+    end:"90% 10%",
     onEnter:()=>{
       page2_timeline.restart();
     },
@@ -131,8 +131,8 @@ page3_timeline.fromTo("#page3>img:nth-child(1)", {opacity:0, y: "500px" }, { opa
 ScrollTrigger.create({
   trigger: "#page3",
     toggleActions: "restart none resume none",
-    start:"60% 90%",
-    end:"40% 40%",
+    start:"10% 90%",
+    end:"90% 10%",
     onEnter:()=>{
       page3_timeline.restart();
     },
@@ -146,7 +146,7 @@ ScrollTrigger.create({
 // page4 animations
 
 const page4_timeline = gsap.timeline();
-page4_timeline.fromTo("#page4>img:nth-child(1)", {opacity:0, y: "500px" }, { opacity: 1, y:"40px" ,duration:0.})
+page4_timeline.fromTo("#page4>img:nth-child(1)", {opacity:0, y: "500px" }, { opacity: 1, y:"40px" ,duration:0.3})
 .from("#page4>img:nth-child(2)", {
   y: "200px",
   opacity: 0,
@@ -155,8 +155,8 @@ page4_timeline.fromTo("#page4>img:nth-child(1)", {opacity:0, y: "500px" }, { opa
 ScrollTrigger.create({
   trigger: "#page4",
     toggleActions: "restart none resume none",
-    start:"60% 80%",
-    end:"30% 30%",
+    start:"10% 90%",
+    end:"90% 10%",
     onEnter:()=>{
       page4_timeline.restart();
     },
@@ -179,8 +179,8 @@ page5_timeline.from("#page5>img:nth-child(1)", {opacity:0, left:"18%"})
 ScrollTrigger.create({
   trigger: "#page5",
     toggleActions: "restart none resume none",
-    start:"60% 90%",
-    end:"40% 30%",
+    start:"10% 90%",
+    end:"90% 10%",
     onEnter:()=>{
       page5_timeline.restart();
     },
@@ -205,13 +205,32 @@ page6_timeline.from("#page6>img:nth-child(1)", {opacity:0, left: "-2%", duration
 ScrollTrigger.create({
   trigger: "#page6",
     toggleActions: "restart none resume none",
-    start:"60% 90%",
-    end:"40% 30%",
+    start:"10% 90%",
+    end:"90% 10%",
     onEnter:()=>{
       page6_timeline.restart();
     },
     onEnterBack:()=>{
       page6_timeline.restart();
+    }
+})
+
+
+// // ******************************
+// // page7 animations
+
+const page7_timeline = gsap.timeline();
+page6_timeline.from("#page7>img:nth-child(1)", {opacity:0,y:50})
+ScrollTrigger.create({
+  trigger: "#page7",
+    toggleActions: "restart none resume none",
+    start:"10% 60%",
+    end:"10% 10%",
+    onEnter:()=>{
+      page7_timeline.restart();
+    },
+    onEnterBack:()=>{
+      page7_timeline.restart();
     }
 })
 

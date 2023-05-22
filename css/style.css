@@ -9,13 +9,19 @@ body {
 }
 /* scroll bar  */
 /* For Webkit-based browsers */
-::-webkit-scrollbar {
-  width: 10px; 
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
-::-webkit-scrollbar-track {
-  background: transparent; 
+body::-webkit-scrollbar {
+  width: 6px;
 }
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 
 ::-webkit-scrollbar-thumb {
   background: navy; 
@@ -83,7 +89,7 @@ scrollbar-thumb:hover {
   top: 0;
   left: 0;
   min-width: 45vw;
-  height: 100vh;
+  height: 102vh;
   /* z-index: -1; */
 }
 
@@ -220,7 +226,7 @@ scrollbar-thumb:hover {
   align-items: flex-end;
 }
 #page4>img:nth-child(2){
-  margin-left: -16.5rem;
+  margin-left: -13.5rem;
 }
 
 /* page 5 design */
@@ -275,7 +281,7 @@ scrollbar-thumb:hover {
 }
 #page7>img{
   position: absolute;
-  left: 0;  right: 0;  top: 10%;
+  left: 0;  right: 0;  top: 0;
   width: -webkit-fill-available;
 }
 
